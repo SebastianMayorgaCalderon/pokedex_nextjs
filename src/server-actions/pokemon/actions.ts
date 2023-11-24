@@ -2,7 +2,7 @@ import { POKEMON_API_BASE_URL } from "src/constants"
 import { Pokemon, parsePokemonDTO } from 'src/models/pokemon';
 
 export const getPokemonList = async (pagination: any = null) => {
-  const res = await fetch(`${POKEMON_API_BASE_URL}?limit=100&offset=0.`)
+  const res = await fetch(`${POKEMON_API_BASE_URL}?limit=100&offset=0`)
   const data = await res.json();
   const pokemonList = await Promise.all(data.results.map(async (pokemon: { url: string }): Promise<Pokemon | null> => {
     const pokemonData = getPokemonDetails(pokemon.url)
