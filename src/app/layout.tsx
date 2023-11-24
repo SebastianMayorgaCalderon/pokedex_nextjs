@@ -12,11 +12,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full w-full">
-      <body className="flex justify-center items-center flex-col">
-        <SessionProvider>
-          <NavBar />
-          {children}
-        </SessionProvider>
+      <body className="">
+        <SessionProvider>{children}</SessionProvider>
       </body>
     </html>
   );

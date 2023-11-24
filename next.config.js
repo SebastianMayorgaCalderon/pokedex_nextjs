@@ -8,6 +8,12 @@ const nextConfig = {
         port: "",
         pathname: "/PokeAPI/sprites/master/sprites/**",
       },
+      {
+        protocol: "https",
+        hostname: "flowbite.com",
+        port: "",
+        pathname: "/docs/images/**",
+      },
     ],
   },
 };

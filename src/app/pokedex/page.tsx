@@ -2,6 +2,7 @@
 import { useSession, signOut } from "next-auth/react";
 import { redirect } from "next/navigation";
 import React from "react";
+import NavBar from "src/components/shared/navigation/nav-bar";
 
 type Props = {};
 
@@ -19,5 +20,7 @@ const PokedexPage = (props: Props) => {
     </div>
   );
 };
+
+PokedexPage.requireAuth = true;
 
 export default PokedexPage;
