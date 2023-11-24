@@ -19,7 +19,7 @@ const SignInPage = (props: Props) => {
   };
   return (
     <form
-      className="flex flex-col items-center space-y-5 w-1/4 w"
+      className="flex flex-col items-center space-y-5 w-1/4 w justify-center"
       onSubmit={signInHandler}
     >
       <h1>Login</h1>

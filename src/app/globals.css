@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.page-wrapper{
+  padding-top: 5rem;
+}

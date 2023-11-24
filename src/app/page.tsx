@@ -1,4 +1,4 @@
-import NavBar from "src/components/nav-bar";
+import NavBar from "src/components/nav-bar/NavBar";
 import PokemonListItem from "src/components/pokemon/pokemon-list-item";
 import { getPokemonList } from "src/server-actions/pokemon/actions";
 
@@ -8,8 +8,7 @@ const HomePage = async (props: Props) => {
   const pokemonList = await getPokemonList();
   return (
     <>
-      <NavBar />
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-6 gap-4 w-full">
         {pokemonList.map((pokemon) => (
           <PokemonListItem key={pokemon.id} pokemon={pokemon} />
         ))}
